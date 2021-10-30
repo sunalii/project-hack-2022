@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+}
+.squad{
+    height: 100vh;
+    display: flex;
+}
+.champion{
+    flex: 1;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    transition: .6s;
+}
+.champion:hover{
+    flex: 3;
+}
+.champion-1{
+    position: absolute;
+    height: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    filter: grayscale(80%);
+    transition: .3s;
+}
+.champion:hover .champion-1{
+    filter: grayscale(0);
+}
+.champion-info{
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+    width: 100%;
+    opacity: 0;
+    transition: .2s;
+}
+.champion:hover .champion-info{
+    opacity: 1;
+    bottom: 60px;
+    transition-delay: .6s;
+}
+.champion-info h2{
+    color: aliceblue;
+    font-size: 25px;
+
+}
+.champion-info p{
+    color: aquamarine;
+    font-style: italic;
+    margin-top: 8px;
+    margin-bottom: 20px;
+}
