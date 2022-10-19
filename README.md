@@ -1,7 +1,7 @@
-# project-hack-2021
+# project-hack-2022
 
 ## Hello Hackers!
-- Upload your awesome project files to get participated in the Hacktoberfest 2021!
+- Upload your awesome project files to get participated in the Hacktoberfest 2022!
 
 - Simply, **fork** this repo and get started!
 
