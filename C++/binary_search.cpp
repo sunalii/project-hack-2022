@@ -1,18 +1,39 @@
-#include<iostream>
-using namespace std
-int binarysearch(arr[],int size,int key){
-	start=0;end=size-1;
-	arr[i]=start+(end-start)/2;
-	if(arr[i]==key){
-		return i;
-	if(arr)
-	}
+#include<bits/stdc++.h>
+using namespace std;
+int bin_search(int arr[],int size,int key){
+	int start=0;
+	int end = size-1;
+	int mid= start+(end-start)/2;
+	while(start <=end){
+		if(arr[mid]==key){
+			return mid;
+		}
+if(key>arr[mid]){
+	start = mid+1;
 }
-
-
+else{
+	end=mid-1;
+}
+mid = start+(end-start)/2;
+}
+return -1;
+}
 
 int main()
 {
-	
-	return 0;
-	
+ int t;
+ cin>>t;
+ while(t>0)
+ {
+ 	int size,key; cin>>size>>key;
+ 	int a[size];
+ 	for(int i=0 ;i<size;i++)
+ 	{
+ 		cin>>a[i];
+ 	}
+ 	int index =bin_search(a,size,key);
+ 	cout<<"index of given array :"<<index<<endl; 
+   t--;
+ }
+ return 0;
+}
